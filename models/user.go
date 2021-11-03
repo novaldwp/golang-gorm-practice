@@ -2,11 +2,11 @@ package models
 
 import "gorm.io/gorm"
 
-type User struct {
+type User struct { // User schema or blueprint
 	gorm.Model
-	ID    int
-	Name  string
-	Email string
+	ID    int    `json:"ID"`
+	Name  string `json:"name"`
+	Email string `json:"email"`
 }
 
 // create user
